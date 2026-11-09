@@ -34,7 +34,15 @@
 }
 </script>
 
-<script src="https://cdn.tailwindcss.com" defer></script>
+<!-- CRITICAL INLINE CSS (Prevents FOUC / White Flash) -->
+<style>
+  /* Base background and text to prevent raw HTML flash */
+  body { background-color: #0f172a; color: #cbd5e1; margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+  .critical-card { background-color: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 2rem; margin-top: 2rem; }
+  .critical-hidden { display: none !important; }
+</style>
+
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -48,16 +56,26 @@
     outline: none; transition: border-color 0.2s; font-size: 1.1rem;
   }
   .input-field:focus { border-color: #ec4899; }
+  
+  /* Smooth Reveal Animation */
+  @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 </style>
 </head>
 
-<body class="bg-slate-900 text-slate-300 min-h-screen flex flex-col items-center p-4 md:p-8">
+<body class="min-h-screen flex flex-col items-center p-4 md:p-8">
 
-  <!-- Header / Nav -->
-  <header class="w-full max-w-3xl flex justify-between items-center py-4 border-b border-slate-800 mb-8">
-    <a href="/en/" class="text-xl font-bold text-pink-400 hover:text-pink-300 transition">← Back to Calculator</a>
-    <a href="/en/blog/" class="text-sm text-slate-400 hover:text-white transition">Blog</a>
-  </header>
+  <!-- ECOSYSTEM NAVIGATION -->
+  <nav class="w-full max-w-3xl sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-3 mb-8 flex justify-between items-center px-2">
+    <a href="/en/" class="text-xl font-bold text-white hover:text-pink-400 transition flex items-center gap-2">
+      <span>💔</span> ExBackChance
+    </a>
+    <div class="flex gap-4 text-sm font-semibold">
+      <a href="/en/" class="text-slate-400 hover:text-pink-400 transition">Calculator</a>
+      <a href="/en/tools/no-contact-tracker.html" class="text-pink-400 underline decoration-2 underline-offset-4">Tracker</a>
+      <a href="/en/blog/" class="text-slate-400 hover:text-pink-400 transition">Blog</a>
+    </div>
+  </nav>
 
   <main class="max-w-3xl w-full">
     
@@ -74,12 +92,12 @@
             <label for="breakupDate" class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Breakup Date (or Day 1 of No Contact)</label>
             <input type="date" id="breakupDate" class="input-field">
           </div>
-          <button id="trackBtn" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition text-lg">
+          <button id="trackBtn" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition text-lg active:scale-95">
             Calculate My Progress
           </button>
         </div>
 
-        <!-- Result Area (Hidden by default) -->
+        <!-- Result Area -->
         <div id="resultArea" class="hidden mt-8 border-t border-slate-700 pt-8">
           <div class="text-center mb-6">
             <div class="text-sm text-slate-400 uppercase tracking-widest font-bold mb-2">Days of No Contact</div>
@@ -90,8 +108,8 @@
             <h3 class="text-lg font-bold text-white mb-2" id="phaseTitle">Phase Title</h3>
             <p class="text-sm text-slate-300 leading-relaxed mb-4" id="phaseDesc">Description</p>
             
-            <div class="w-full bg-slate-800 rounded-full h-2.5 mb-2">
-              <div class="bg-gradient-to-r from-pink-500 to-purple-600 h-2.5 rounded-full" id="progressBar" style="width: 0%"></div>
+            <div class="w-full bg-slate-800 rounded-full h-2.5 mb-2 overflow-hidden">
+              <div class="bg-gradient-to-r from-pink-500 to-purple-600 h-2.5 rounded-full transition-all duration-1000 ease-out" id="progressBar" style="width: 0%"></div>
             </div>
             <div class="flex justify-between text-xs text-slate-500 font-semibold">
               <span>Day 1</span>
@@ -102,7 +120,7 @@
       </div>
     </div>
 
-    <!-- EDITORIAL WRAPPER (AdSense Compliance) -->
+    <!-- EDITORIAL WRAPPER -->
     <article class="bg-slate-800/50 p-6 md:p-10 rounded-2xl border border-slate-700 space-y-6 text-sm md:text-base leading-relaxed text-slate-300">
       <h2 class="text-2xl font-bold text-white">The Psychology of the 30-Day No Contact Rule</h2>
       <p>The No Contact Rule is not a manipulation tactic; it is a neurological reset. When you go through a breakup, your brain experiences a literal drop in dopamine—the same chemical withdrawal seen in addiction. The tracker above is designed to help you visualize this timeline so you can stop obsessing over the clock and start focusing on your own healing.</p>
@@ -152,7 +170,7 @@
       <div class="bg-slate-900/80 p-5 rounded-xl border border-pink-500/30 text-center mt-8">
         <h4 class="text-lg font-bold text-white mb-2">Ready to know your actual chances?</h4>
         <p class="text-sm mb-4">The No Contact Rule is step one. To analyze your specific timeline, attachment styles, and reconciliation probability, take our full calculator.</p>
-        <a href="/en/" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition">
+        <a href="/en/" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition active:scale-95">
           Take the Ex Back Calculator →
         </a>
       </div>
@@ -169,7 +187,22 @@
   </footer>
 
   <script>
+    // Audio Context for SFX (Zero network payload)
+    let audioCtx = null;
+    function playPop() {
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.type = 'sine'; o.frequency.setValueAtTime(900, audioCtx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(400, audioCtx.currentTime + 0.1);
+        g.gain.setValueAtTime(0.3, audioCtx.currentTime); g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
+        o.connect(g); g.connect(audioCtx.destination); o.start(); o.stop(audioCtx.currentTime + 0.15);
+      } catch(e) {}
+    }
+
     document.getElementById('trackBtn').addEventListener('click', function() {
+      playPop(); // Trigger SFX
+      
       const dateInput = document.getElementById('breakupDate').value;
       if (!dateInput) {
         alert("Please select your breakup date.");
@@ -179,14 +212,12 @@
       const breakupDate = new Date(dateInput);
       const today = new Date();
       
-      // Reset time part for accurate day calculation
       breakupDate.setHours(0,0,0,0);
       today.setHours(0,0,0,0);
 
       const diffTime = Math.abs(today - breakupDate);
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
       
-      // If date is in the future
       if (today < breakupDate) {
         alert("Please enter a past date (or today's date).");
         return;
@@ -196,12 +227,17 @@
       const phaseTitleEl = document.getElementById('phaseTitle');
       const phaseDescEl = document.getElementById('phaseDesc');
       const progressBarEl = document.getElementById('progressBar');
+      const resultArea = document.getElementById('resultArea');
 
       dayCountEl.textContent = diffDays;
 
       let progressPercent = (diffDays / 30) * 100;
       if (progressPercent > 100) progressPercent = 100;
-      progressBarEl.style.width = progressPercent + "%";
+      
+      // Delay progress bar slightly to animate smoothly after reveal
+      setTimeout(() => {
+        progressBarEl.style.width = progressPercent + "%";
+      }, 100);
 
       if (diffDays <= 7) {
         phaseTitleEl.textContent = "Phase 1: Acute Withdrawal";
@@ -225,7 +261,12 @@
         phaseTitleEl.className = "text-lg font-bold text-emerald-400 mb-2";
       }
 
-      document.getElementById('resultArea').classList.remove('hidden');
+      resultArea.classList.remove('hidden');
+      
+      // Re-trigger animation
+      resultArea.classList.remove('reveal');
+      void resultArea.offsetWidth; 
+      resultArea.classList.add('reveal');
     });
   </script>
 </body>
