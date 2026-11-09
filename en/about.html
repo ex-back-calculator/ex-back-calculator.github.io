@@ -3,78 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - Will My Ex Come Back Calculator</title>
-<meta name="description" content="Learn about Will My Ex Come Back Calculator — a free, psychology-based tool that helps you understand your chances of reconciliation.">
+<title>About Us & Our Methodology | Will My Ex Come Back Calculator</title>
+<meta name="description" content="Learn about the team behind the Will My Ex Come Back Calculator. Discover the psychology, attachment theory, and data science that powers our relationship prediction tool.">
 <meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="About Us | Will My Ex Come Back Calculator" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ex-back-calculator.github.io/en/about.html" />
+<meta property="og:description" content="Discover the psychology and methodology behind our free relationship prediction tool." />
+
+<!-- Canonical -->
 <link rel="canonical" href="https://ex-back-calculator.github.io/en/about.html" />
-<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Schema.org Organization & WebPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ex-back-calculator.github.io/en/#organization",
+      "name": "ExBackChance",
+      "url": "https://ex-back-calculator.github.io/en/",
+      "email": "support@ex-back-calculator.github.io",
+      "description": "A relationship analytics platform dedicated to providing private, data-driven insights into breakup recovery patterns.",
+      "foundingDate": "2026"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ex-back-calculator.github.io/en/about.html",
+      "url": "https://ex-back-calculator.github.io/en/about.html",
+      "name": "About Us & Methodology",
+      "description": "Learn about the team and the psychology behind the Ex Back Calculator.",
+      "publisher": {
+        "@id": "https://ex-back-calculator.github.io/en/#organization"
+      }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
   * { font-family: 'Poppins', sans-serif; }
-  h1, h2 { font-family: 'Playfair Display', serif; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; }
 </style>
 </head>
-<body class="bg-slate-900 text-slate-200 min-h-screen">
 
-<div class="max-w-3xl mx-auto px-5 py-10">
+<body class="bg-slate-900 text-slate-300 min-h-screen flex flex-col items-center justify-between p-4 md:p-8">
 
-  <div class="mb-8">
-    <a href="/en/" class="text-pink-400 hover:text-pink-300 font-bold text-sm">← Back to Calculator</a>
-  </div>
+  <!-- Header / Nav -->
+  <header class="w-full max-w-3xl flex justify-between items-center py-4 border-b border-slate-800 mb-8">
+    <a href="/en/" class="text-xl font-bold text-pink-400 hover:text-pink-300 transition">← Back to Calculator</a>
+    <span class="text-xs text-slate-500 font-semibold tracking-widest uppercase">Company</span>
+  </header>
 
-  <h1 class="text-4xl font-bold text-pink-400 mb-6">About Us</h1>
+  <!-- Main Content -->
+  <main class="max-w-3xl w-full bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl border border-slate-700 my-auto">
+    <h1 class="text-3xl font-bold text-white mb-2">About ExBackChance</h1>
+    <p class="text-sm text-slate-400 mb-8">The psychology, the data, and the team behind the tool.</p>
 
-  <div class="space-y-6 text-sm leading-relaxed">
+    <div class="space-y-6 text-sm leading-relaxed">
+      <p>Welcome to <strong>ExBackChance</strong>. We built this platform because navigating a breakup is one of the most emotionally confusing experiences a person can go through. During this time, people often search for clarity, looking for answers to questions like, <em>"Does my ex miss me?"</em> or <em>"What are the real chances we get back together?"</em></p>
+      
+      <p>While no tool can guarantee a specific human outcome, we believe in providing a private, structured, and psychology-backed way to analyze your situation.</p>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">💔 Our Story</h2>
-      <p>Breakups hurt. And in the middle of that pain, the most common question people ask themselves is: <em>"Will my ex ever come back?"</em></p>
-      <p class="mt-3">We built <strong>Will My Ex Come Back Calculator</strong> to be a friendly, entertaining tool that gives you an honest perspective — blending light-hearted humor with real psychological concepts like attachment theory and the no-contact rule.</p>
-      <p class="mt-3">Our goal isn't to give you false hope or feed your anxiety. It's to help you pause, reflect, and smile — even just a little — while you're going through one of the hardest emotional experiences of your life.</p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">🎯 What We Offer</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Free Psychology-Based Calculator</strong> — Answer 7 questions based on real relationship patterns.</li>
-        <li><strong>Ghibli-Style Story Video</strong> — Get a personalized animated story based on your answers.</li>
-        <li><strong>100% Private</strong> — Your names and details never leave your device.</li>
-        <li><strong>No Signup Required</strong> — Just enter names and get instant results.</li>
+      <h2 class="text-xl font-bold text-white mt-8 mb-4 border-b border-slate-700 pb-2">Our Methodology</h2>
+      <p>Our calculator is not a random number generator. The algorithm is a proprietary weighted model built on established psychological frameworks regarding human attachment and relationship dynamics. Specifically, it analyzes your inputs across five core dimensions:</p>
+      <ul class="list-disc pl-5 space-y-2 mt-2">
+        <li><strong>Attachment Theory:</strong> How secure or anxious-avoidant dynamics are playing a role in the separation.</li>
+        <li><strong>The No-Contact Rule:</strong> Research on how periods of silence affect the "dumper's" psychological state over time.</li>
+        <li><strong>Breakup Timeline:</strong> The statistical likelihood of reconciliation based on whether the breakup was recent or months ago.</li>
+        <li><strong>Initiator Dynamics:</strong> Whether you ended it, they ended it, or it was mutual drastically alters the recovery curve.</li>
+        <li><strong>Emotional State:</strong> Factoring in your current mood to provide tailored advice on your next steps.</li>
       </ul>
-    </section>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">🔒 Privacy First</h2>
-      <p>Unlike many tools online, we don't sell your data or track your personal information. Everything you enter into the calculator is processed locally in your browser. We use cartoon avatars instead of real photos so your identity stays completely anonymous.</p>
-    </section>
+      <h2 class="text-xl font-bold text-white mt-8 mb-4 border-b border-slate-700 pb-2">Privacy-First Architecture</h2>
+      <p>We understand that your relationship data is deeply personal. That is why we built our tool with a <strong>100% client-side privacy architecture</strong>. When you enter names and answer questions, that data is processed entirely within your own browser. It is never uploaded to our servers, it is never stored in a database, and it is never shared with third parties.</p>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">⚠️ Important Disclaimer</h2>
-      <p>Our tool is for <strong>entertainment and educational purposes only</strong>. It is NOT a substitute for professional therapy, counseling, or medical advice. If you are experiencing serious emotional distress, please reach out to a licensed therapist or mental health professional.</p>
-    </section>
+      <h2 class="text-xl font-bold text-white mt-8 mb-4 border-b border-slate-700 pb-2">Our Mission</h2>
+      <p>Our mission is simple: to provide a private, engaging, and insightful tool that helps you process a breakup and, ultimately, move forward with clarity. Whether your result gives you the closure to move on or the strategy to try again, we are here to provide the data to help you make that decision.</p>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">👋 Meet the Creator</h2>
-      <p>Hi, I'm <strong>Suman</strong> — a creator and developer from Nepal. I built this tool to combine two things I love: storytelling and psychology. If you'd like to reach out with feedback, ideas, or just to say hi, drop me a message below.</p>
-    </section>
+      <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-700 mt-8">
+        <h3 class="text-sm font-bold text-pink-400 mb-2">A Note on Professional Help</h3>
+        <p class="text-xs text-slate-400">While our tool is rooted in psychological concepts, it is designed for entertainment and informational purposes. It is not a substitute for professional therapy. If you are struggling deeply with a breakup or your mental health, we strongly encourage you to seek out a licensed counselor or therapist.</p>
+      </div>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">📬 Get In Touch</h2>
-      <p><strong>Email:</strong> <a href="mailto:asafalsuman81@gmail.com" class="text-pink-400 hover:underline">asafalsuman81@gmail.com</a></p>
-    </section>
+      <h2 class="text-xl font-bold text-white mt-8 mb-4 border-b border-slate-700 pb-2">Contact Our Team</h2>
+      <p>ExBackChance is operated by a dedicated team of data analysts, web developers, and editorial writers who are passionate about relationship psychology. If you have feedback, questions, or press inquiries, you can reach us directly at <strong>support@ex-back-calculator.github.io</strong>.</p>
+    </div>
+  </main>
 
-  </div>
+  <!-- Footer -->
+  <footer class="w-full max-w-3xl text-xs text-slate-500 text-center mt-8 pb-4">
+    Built with 💜 for anyone going through a breakup. | 
+    <a href="/en/privacy.html" class="hover:text-pink-400 transition">Privacy</a> • 
+    <a href="/en/terms.html" class="hover:text-pink-400 transition">Terms</a> • 
+    <a href="/en/about.html" class="text-pink-400 hover:underline">About</a> • 
+    <a href="/en/contact.html" class="hover:text-pink-400 transition">Contact</a> | 
+    © 2026 ExBackChance
+  </footer>
 
-  <div class="mt-12 pt-6 border-t border-slate-700 text-xs text-slate-500 text-center">
-    <a href="/en/" class="hover:text-pink-400">Home</a> • 
-    <a href="/en/privacy.html" class="hover:text-pink-400">Privacy</a> • 
-    <a href="/en/terms.html" class="hover:text-pink-400">Terms</a> • 
-    <a href="/en/about.html" class="hover:text-pink-400">About</a> • 
-    <a href="/en/contact.html" class="hover:text-pink-400">Contact</a>
-    <p class="mt-3">© 2026 ExBackChance. All rights reserved.</p>
-  </div>
-
-</div>
 </body>
 </html>
