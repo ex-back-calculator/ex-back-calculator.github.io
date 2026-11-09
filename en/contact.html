@@ -3,77 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - Will My Ex Come Back Calculator</title>
-<meta name="description" content="Get in touch with Will My Ex Come Back Calculator. Send us feedback, questions, or collaboration requests.">
+<title>Contact Us | Will My Ex Come Back Calculator</title>
+<meta name="description" content="Get in touch with the ExBackChance team. Contact us for support, feedback, or press inquiries regarding our relationship prediction calculator.">
 <meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Contact Us | Will My Ex Come Back Calculator" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ex-back-calculator.github.io/en/contact.html" />
+
+<!-- Canonical -->
 <link rel="canonical" href="https://ex-back-calculator.github.io/en/contact.html" />
-<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Schema.org ContactPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Us",
+  "url": "https://ex-back-calculator.github.io/en/contact.html",
+  "description": "Contact the team behind ExBackChance.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ExBackChance",
+    "email": "support@ex-back-calculator.github.io"
+  }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
   * { font-family: 'Poppins', sans-serif; }
   h1, h2 { font-family: 'Playfair Display', serif; }
+  .input-field {
+    width: 100%; background: #0f172a; border: 1px solid #334155; 
+    border-radius: 0.5rem; padding: 0.75rem 1rem; color: white; 
+    outline: none; transition: border-color 0.2s;
+  }
+  .input-field:focus { border-color: #ec4899; }
 </style>
 </head>
-<body class="bg-slate-900 text-slate-200 min-h-screen">
 
-<div class="max-w-3xl mx-auto px-5 py-10">
+<body class="bg-slate-900 text-slate-300 min-h-screen flex flex-col items-center justify-between p-4 md:p-8">
 
-  <div class="mb-8">
-    <a href="/en/" class="text-pink-400 hover:text-pink-300 font-bold text-sm">← Back to Calculator</a>
-  </div>
+  <!-- Header / Nav -->
+  <header class="w-full max-w-3xl flex justify-between items-center py-4 border-b border-slate-800 mb-8">
+    <a href="/en/" class="text-xl font-bold text-pink-400 hover:text-pink-300 transition">← Back to Calculator</a>
+    <span class="text-xs text-slate-500 font-semibold tracking-widest uppercase">Support</span>
+  </header>
 
-  <h1 class="text-4xl font-bold text-pink-400 mb-3">Contact Us</h1>
-  <p class="text-sm text-slate-400 mb-8">We'd love to hear from you</p>
+  <!-- Main Content -->
+  <main class="max-w-3xl w-full bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl border border-slate-700 my-auto">
+    <h1 class="text-3xl font-bold text-white mb-2">Contact Us</h1>
+    <p class="text-sm text-slate-400 mb-8">We'd love to hear from you. Our team typically responds within 48 business hours.</p>
 
-  <div class="space-y-6 text-sm leading-relaxed">
+    <div class="grid md:grid-cols-2 gap-10">
+      
+      <!-- Contact Form -->
+      <div>
+        <h2 class="text-xl font-bold text-white mb-4">Send a Message</h2>
+        <!-- Note: This mailto: form opens the user's default email client. It is 100% reliable for static sites. -->
+        <form action="mailto:support@ex-back-calculator.github.io" method="post" enctype="text/plain" class="space-y-4">
+          <div>
+            <label for="name" class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Your Name</label>
+            <input type="text" id="name" name="name" required class="input-field" placeholder="Jane Doe">
+          </div>
+          <div>
+            <label for="email" class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Your Email</label>
+            <input type="email" id="email" name="email" required class="input-field" placeholder="jane@example.com">
+          </div>
+          <div>
+            <label for="message" class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Message</label>
+            <textarea id="message" name="message" rows="4" required class="input-field" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-3 rounded-lg shadow-lg transition">
+            Send Message
+          </button>
+        </form>
+        <p class="text-xs text-slate-500 mt-3 text-center italic">This form opens your default email app.</p>
+      </div>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">📬 Get In Touch</h2>
-      <p>Have a question, feedback, or business inquiry? Send us an email and we'll get back to you as soon as possible (usually within 24-48 hours).</p>
-    </section>
+      <!-- Contact Info & FAQ -->
+      <div>
+        <h2 class="text-xl font-bold text-white mb-4">Direct Contact</h2>
+        <div class="bg-slate-900/50 p-5 rounded-lg border border-slate-700 mb-6">
+          <p class="text-sm text-slate-300 mb-2">For support, feedback, or press inquiries, email us directly at:</p>
+          <a href="mailto:support@ex-back-calculator.github.io" class="text-pink-400 font-bold text-lg hover:underline break-all">support@ex-back-calculator.github.io</a>
+        </div>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">📧 Email</h2>
-      <p>For all inquiries:</p>
-      <p class="mt-3 text-lg">
-        <a href="mailto:asafalsuman81@gmail.com" class="text-pink-400 hover:underline font-bold">asafalsuman81@gmail.com</a>
-      </p>
-    </section>
+        <h2 class="text-xl font-bold text-white mb-4 mt-8">Before You Contact Us</h2>
+        <div class="space-y-3">
+          <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+            <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+              <span>Do you offer personalized relationship advice?</span>
+              <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+            </summary>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">No. Our team consists of data analysts and developers. We provide the calculator tool, but we do not offer one-on-one counseling or personalized relationship advice. Please consult a licensed therapist for professional help.</p>
+          </details>
+          <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+            <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+              <span>How do I report a bug or issue?</span>
+              <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+            </summary>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">If you encounter a technical error with the calculator or the Ghibli video generator, please email us with a screenshot and a brief description of the issue. We will fix it as quickly as possible.</p>
+          </details>
+          <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+            <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+              <span>Can I advertise on your site?</span>
+              <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+            </summary>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">For advertising or partnership inquiries, please use the email address above and include "Advertising" in the subject line.</p>
+          </details>
+        </div>
+      </div>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">💬 What You Can Contact Us About</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>Feedback or suggestions for the calculator</li>
-        <li>Bug reports or technical issues</li>
-        <li>Business and collaboration inquiries</li>
-        <li>Press and media requests</li>
-        <li>Advertising opportunities</li>
-        <li>General questions about the site</li>
-      </ul>
-    </section>
+    </div>
+  </main>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">⏱️ Response Time</h2>
-      <p>We aim to respond to all emails within <strong>24–48 hours</strong>. During busy periods, it may take up to 3 business days.</p>
-    </section>
+  <!-- Footer -->
+  <footer class="w-full max-w-3xl text-xs text-slate-500 text-center mt-8 pb-4">
+    Built with 💜 for anyone going through a breakup. | 
+    <a href="/en/privacy.html" class="hover:text-pink-400 transition">Privacy</a> • 
+    <a href="/en/terms.html" class="hover:text-pink-400 transition">Terms</a> • 
+    <a href="/en/about.html" class="hover:text-pink-400 transition">About</a> • 
+    <a href="/en/contact.html" class="text-pink-400 hover:underline">Contact</a> | 
+    © 2026 ExBackChance
+  </footer>
 
-    <section>
-      <h2 class="text-2xl font-bold text-pink-400 mb-3">⚠️ Important Note</h2>
-      <p>We are NOT a crisis intervention service. If you are experiencing a mental health emergency, please contact a licensed therapist, crisis hotline, or emergency services in your area immediately.</p>
-    </section>
-
-  </div>
-
-  <div class="mt-12 pt-6 border-t border-slate-700 text-xs text-slate-500 text-center">
-    <a href="/en/" class="hover:text-pink-400">Home</a> • 
-    <a href="/en/privacy.html" class="hover:text-pink-400">Privacy</a> • 
-    <a href="/en/terms.html" class="hover:text-pink-400">Terms</a> • 
-    <a href="/en/about.html" class="hover:text-pink-400">About</a> • 
-    <a href="/en/contact.html" class="hover:text-pink-400">Contact</a>
-    <p class="mt-3">© 2026 ExBackChance. All rights reserved.</p>
-  </div>
-
-</div>
 </body>
 </html>
