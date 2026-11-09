@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Contact Rule Tracker & Timeline Calculator (2026)</title>
+<meta name="description" content="Track your No Contact Rule progress day-by-day. Enter your breakup date to see your psychological milestones, brain chemistry reset phase, and the dumper's regret window.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="No Contact Rule Tracker & Timeline Calculator" />
+<meta property="og:description" content="Track your No Contact progress and see the psychological milestones of your breakup recovery." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ex-back-calculator.github.io/en/tools/no-contact-tracker.html" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://ex-back-calculator.github.io/en/tools/no-contact-tracker.html" />
+
+<!-- Schema.org WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "No Contact Rule Tracker",
+  "url": "https://ex-back-calculator.github.io/en/tools/no-contact-tracker.html",
+  "description": "A free tool to track your No Contact Rule progress and psychological milestones.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  * { font-family: 'Poppins', sans-serif; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; }
+  .input-field {
+    width: 100%; background: #0f172a; border: 2px solid #334155; 
+    border-radius: 0.75rem; padding: 1rem; color: white; 
+    outline: none; transition: border-color 0.2s; font-size: 1.1rem;
+  }
+  .input-field:focus { border-color: #ec4899; }
+</style>
+</head>
+
+<body class="bg-slate-900 text-slate-300 min-h-screen flex flex-col items-center p-4 md:p-8">
+
+  <!-- Header / Nav -->
+  <header class="w-full max-w-3xl flex justify-between items-center py-4 border-b border-slate-800 mb-8">
+    <a href="/en/" class="text-xl font-bold text-pink-400 hover:text-pink-300 transition">← Back to Calculator</a>
+    <a href="/en/blog/" class="text-sm text-slate-400 hover:text-white transition">Blog</a>
+  </header>
+
+  <main class="max-w-3xl w-full">
+    
+    <!-- TOOL INTERFACE -->
+    <div class="bg-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl border border-slate-700 mb-8 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-pink-600/10 to-purple-600/10 pointer-events-none"></div>
+      
+      <div class="relative z-10">
+        <h1 class="text-3xl font-bold text-white mb-2 text-center">No Contact Tracker</h1>
+        <p class="text-sm text-slate-400 mb-8 text-center">Enter the date of your breakup to see your current psychological milestone.</p>
+
+        <div class="max-w-md mx-auto space-y-4">
+          <div>
+            <label for="breakupDate" class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Breakup Date (or Day 1 of No Contact)</label>
+            <input type="date" id="breakupDate" class="input-field">
+          </div>
+          <button id="trackBtn" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-4 rounded-xl shadow-lg transition text-lg">
+            Calculate My Progress
+          </button>
+        </div>
+
+        <!-- Result Area (Hidden by default) -->
+        <div id="resultArea" class="hidden mt-8 border-t border-slate-700 pt-8">
+          <div class="text-center mb-6">
+            <div class="text-sm text-slate-400 uppercase tracking-widest font-bold mb-2">Days of No Contact</div>
+            <div class="text-6xl font-black text-pink-400" id="dayCount">0</div>
+          </div>
+
+          <div class="bg-slate-900/80 p-5 rounded-xl border border-purple-500/30">
+            <h3 class="text-lg font-bold text-white mb-2" id="phaseTitle">Phase Title</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4" id="phaseDesc">Description</p>
+            
+            <div class="w-full bg-slate-800 rounded-full h-2.5 mb-2">
+              <div class="bg-gradient-to-r from-pink-500 to-purple-600 h-2.5 rounded-full" id="progressBar" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between text-xs text-slate-500 font-semibold">
+              <span>Day 1</span>
+              <span>Day 30 (The Reset)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDITORIAL WRAPPER (AdSense Compliance) -->
+    <article class="bg-slate-800/50 p-6 md:p-10 rounded-2xl border border-slate-700 space-y-6 text-sm md:text-base leading-relaxed text-slate-300">
+      <h2 class="text-2xl font-bold text-white">The Psychology of the 30-Day No Contact Rule</h2>
+      <p>The No Contact Rule is not a manipulation tactic; it is a neurological reset. When you go through a breakup, your brain experiences a literal drop in dopamine—the same chemical withdrawal seen in addiction. The tracker above is designed to help you visualize this timeline so you can stop obsessing over the clock and start focusing on your own healing.</p>
+
+      <h3 class="text-xl font-bold text-white mt-6">The 4 Phases of No Contact</h3>
+      
+      <div class="space-y-4">
+        <div class="pl-4 border-l-2 border-pink-500">
+          <h4 class="font-bold text-white">Phase 1: Days 1–7 (Acute Withdrawal)</h4>
+          <p class="text-sm mt-1">Your brain is in panic mode. You will experience intense urges to text, check their social media, or drive by their house. This is the highest-risk period for breaking no contact. Your only goal is to survive the day.</p>
+        </div>
+
+        <div class="pl-4 border-l-2 border-purple-500">
+          <h4 class="font-bold text-white">Phase 2: Days 8–14 (The Dopamine Dip)</h4>
+          <p class="text-sm mt-1">The anxiety begins to level out, but a deep sadness may set in. The reality of the loss hits. This is where the brain begins to accept the new normal. Your ex may start to notice your silence around this time.</p>
+        </div>
+
+        <div class="pl-4 border-l-2 border-blue-500">
+          <h4 class="font-bold text-white">Phase 3: Days 15–21 (The Clarity Window)</h4>
+          <p class="text-sm mt-1">The "fog" begins to lift. You start to regain your logical mind. You may begin to question if you even want them back. Meanwhile, the "fading affect bias" kicks in for your ex—they start forgetting the bad times and remembering the good ones.</p>
+        </div>
+
+        <div class="pl-4 border-l-2 border-green-500">
+          <h4 class="font-bold text-white">Phase 4: Days 22–30 (The Reset)</h4>
+          <p class="text-sm mt-1">You have successfully broken the chemical addiction. Your ex is now in the "regret window." If they have not reached out by now, their curiosity is peaking. You are now in a position of power, not desperation.</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-white mt-8">Frequently Asked Questions</h3>
+      <div class="space-y-3 mt-4">
+        <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+          <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+            <span>Does the No Contact Rule actually work?</span>
+            <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Yes, but its primary function is to heal *you*, not to manipulate *them*. It removes the emotional pressure from the situation and allows the dumper to experience the psychological loss of your absence.</p>
+        </details>
+        <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+          <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+            <span>What if my ex texts me during No Contact?</span>
+            <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Keep it brief, polite, and unemotional. Do not answer immediately (wait at least 2-3 hours). Match their energy—do not be overly enthusiastic or overly cold.</p>
+        </details>
+      </div>
+
+      <div class="bg-slate-900/80 p-5 rounded-xl border border-pink-500/30 text-center mt-8">
+        <h4 class="text-lg font-bold text-white mb-2">Ready to know your actual chances?</h4>
+        <p class="text-sm mb-4">The No Contact Rule is step one. To analyze your specific timeline, attachment styles, and reconciliation probability, take our full calculator.</p>
+        <a href="/en/" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition">
+          Take the Ex Back Calculator →
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="w-full max-w-3xl text-xs text-slate-500 text-center mt-12 pb-4">
+    Built with 💜 for anyone going through a breakup. | 
+    <a href="/en/privacy.html" class="hover:text-pink-400 transition">Privacy</a> • 
+    <a href="/en/terms.html" class="hover:text-pink-400 transition">Terms</a> • 
+    <a href="/en/about.html" class="hover:text-pink-400 transition">About</a> • 
+    <a href="/en/contact.html" class="hover:text-pink-400 transition">Contact</a> | 
+    © 2026 ExBackChance
+  </footer>
+
+  <script>
+    document.getElementById('trackBtn').addEventListener('click', function() {
+      const dateInput = document.getElementById('breakupDate').value;
+      if (!dateInput) {
+        alert("Please select your breakup date.");
+        return;
+      }
+
+      const breakupDate = new Date(dateInput);
+      const today = new Date();
+      
+      // Reset time part for accurate day calculation
+      breakupDate.setHours(0,0,0,0);
+      today.setHours(0,0,0,0);
+
+      const diffTime = Math.abs(today - breakupDate);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      // If date is in the future
+      if (today < breakupDate) {
+        alert("Please enter a past date (or today's date).");
+        return;
+      }
+
+      const dayCountEl = document.getElementById('dayCount');
+      const phaseTitleEl = document.getElementById('phaseTitle');
+      const phaseDescEl = document.getElementById('phaseDesc');
+      const progressBarEl = document.getElementById('progressBar');
+
+      dayCountEl.textContent = diffDays;
+
+      let progressPercent = (diffDays / 30) * 100;
+      if (progressPercent > 100) progressPercent = 100;
+      progressBarEl.style.width = progressPercent + "%";
+
+      if (diffDays <= 7) {
+        phaseTitleEl.textContent = "Phase 1: Acute Withdrawal";
+        phaseDescEl.textContent = "Your brain is in panic mode. The dopamine crash is at its peak. You will feel intense urges to reach out. Do not give in. Focus on survival today.";
+        phaseTitleEl.className = "text-lg font-bold text-pink-400 mb-2";
+      } else if (diffDays <= 14) {
+        phaseTitleEl.textContent = "Phase 2: The Dopamine Dip";
+        phaseDescEl.textContent = "The panic is fading, replaced by a deep sadness. The reality of the loss is setting in. This is where your ex may start to notice your silence.";
+        phaseTitleEl.className = "text-lg font-bold text-purple-400 mb-2";
+      } else if (diffDays <= 21) {
+        phaseTitleEl.textContent = "Phase 3: The Clarity Window";
+        phaseDescEl.textContent = "The fog is lifting. You are regaining your logical mind. Meanwhile, the fading affect bias is hitting your ex—they are starting to forget the bad times.";
+        phaseTitleEl.className = "text-lg font-bold text-blue-400 mb-2";
+      } else if (diffDays <= 30) {
+        phaseTitleEl.textContent = "Phase 4: The Reset";
+        phaseDescEl.textContent = "You have broken the chemical addiction. Your ex is now in the regret window. If they haven't reached out, their curiosity is peaking.";
+        phaseTitleEl.className = "text-lg font-bold text-green-400 mb-2";
+      } else {
+        phaseTitleEl.textContent = "The 30-Day Milestone Reached!";
+        phaseDescEl.textContent = "You have completed the 30-day reset. You are now in a position of strength, not desperation. Decide if reaching out is truly what you want.";
+        phaseTitleEl.className = "text-lg font-bold text-emerald-400 mb-2";
+      }
+
+      document.getElementById('resultArea').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
