@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Should I Text My Ex? Readiness Analyzer (2026)</title>
+<meta name="description" content="Thinking about texting your ex? Take our free psychological readiness analyzer to find out if you should send that text, wait, or delete it entirely.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Should I Text My Ex? Readiness Analyzer" />
+<meta property="og:description" content="Find out if you are psychologically ready to text your ex, or if you should wait." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ex-back-calculator.github.io/en/tools/should-i-text-my-ex.html" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://ex-back-calculator.github.io/en/tools/should-i-text-my-ex.html" />
+
+<!-- Schema.org WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Should I Text My Ex Analyzer",
+  "url": "https://ex-back-calculator.github.io/en/tools/should-i-text-my-ex.html",
+  "description": "A free psychological tool to analyze if you should text your ex after a breakup.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- CRITICAL INLINE CSS (Prevents FOUC & Enforces Layout) -->
+<style>
+  /* Base Styles */
+  body { background-color: #020617; color: #cbd5e1; margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; line-height: 1.5; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; color: #ffffff; margin-top: 0; }
+  
+  /* Layout & Grid */
+  nav { width: 100%; max-width: 48rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(2, 6, 23, 0.8); border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 50; }
+  main { max-width: 48rem; margin: 0 auto; padding: 2rem 1rem; }
+  .hidden { display: none !important; }
+  .grid-cols-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+  .grid-cols-1 { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 0.75rem; }
+  .space-y-6 > * + * { margin-top: 1.5rem; }
+  
+  /* Premium Glassmorphism Panel */
+  .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(236, 72, 153, 0.2); box-shadow: 0 0 30px rgba(236, 72, 153, 0.15); border-radius: 1rem; padding: 1.5rem; }
+  
+  /* Interactive Buttons */
+  .option-btn { background-color: #0f172a; border: 1px solid #334155; color: #ffffff; padding: 0.75rem 1rem; border-radius: 0.5rem; cursor: pointer; width: 100%; text-align: left; font-weight: 600; font-size: 0.875rem; transition: all 0.2s; }
+  .option-btn:hover { border-color: #ec4899; background-color: rgba(236, 72, 153, 0.1); }
+  .option-btn.selected { border-color: #ec4899; background-color: rgba(236, 72, 153, 0.2); box-shadow: 0 0 15px rgba(236, 72, 153, 0.4); }
+  
+  /* Typography */
+  .nav-link { color: #94a3b8; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: color 0.2s; }
+  .nav-link:hover { color: #f472b6; }
+  .nav-link.active { color: #f472b6; text-decoration: underline; text-underline-offset: 4px; }
+  .question-title { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem; color: #ffffff; }
+  
+  /* Editorial Wrapper */
+  .editorial-wrapper { margin-top: 2rem; background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; color: #cbd5e1; font-size: 0.95rem; }
+  .editorial-wrapper h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .editorial-wrapper h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #f472b6; }
+  .editorial-wrapper p { margin-bottom: 1rem; line-height: 1.7; }
+</style>
+
+<!-- Tailwind (Loads asynchronously and refines styles) -->
+<script src="https://cdn.tailwindcss.com" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- STICKY NAV -->
+  <nav>
+    <a href="/en/" class="text-xl font-bold text-white hover:text-pink-400 transition flex items-center gap-2" style="text-decoration: none;">
+      <span>💔</span> ExBackChance
+    </a>
+    <div class="flex gap-4 text-sm font-semibold overflow-x-auto" style="display: flex; gap: 1rem;">
+      <a href="/en/" class="nav-link">Calculator</a>
+      <a href="/en/tools/no-contact-tracker.html" class="nav-link">Tracker</a>
+      <a href="/en/tools/should-i-text-my-ex.html" class="nav-link active">Text Analyzer</a>
+      <a href="/en/blog/" class="nav-link">Blog</a>
+    </div>
+  </nav>
+
+  <main>
+    
+    <!-- TOOL INTERFACE -->
+    <div class="glass-panel relative overflow-hidden">
+      <div class="relative z-10">
+        <h1 class="text-3xl font-bold text-center mb-2">Should I Text My Ex?</h1>
+        <p class="text-sm text-slate-400 mb-8 text-center">Answer these 5 questions to find out if you are psychologically ready to hit send.</p>
+
+        <div id="quiz-container" class="space-y-6">
+          
+          <!-- Q1 -->
+          <div class="question-block" data-q="1">
+            <h3 class="question-title">1. How long has it been since your last contact?</h3>
+            <div class="grid-cols-2">
+              <button class="option-btn" data-val="today">Today</button>
+              <button class="option-btn" data-val="week">This week</button>
+              <button class="option-btn" data-val="month">This month</button>
+              <button class="option-btn" data-val="long">Months / No Contact</button>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="question-block hidden" data-q="2">
+            <h3 class="question-title">2. Who ended the relationship?</h3>
+            <div class="grid-cols-2">
+              <button class="option-btn" data-val="them">They did</button>
+              <button class="option-btn" data-val="me">I did</button>
+              <button class="option-btn" data-val="mutual">Mutual</button>
+              <button class="option-btn" data-val="messy">It fell apart</button>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="question-block hidden" data-q="3">
+            <h3 class="question-title">3. Are you currently sober?</h3>
+            <div class="grid-cols-2">
+              <button class="option-btn" data-val="sober">Yes, completely</button>
+              <button class="option-btn" data-val="drinking">No, I've been drinking</button>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="question-block hidden" data-q="4">
+            <h3 class="question-title">4. What is your primary goal for texting?</h3>
+            <div class="grid-cols-1">
+              <button class="option-btn" data-val="closure">I want closure / answers</button>
+              <button class="option-btn" data-val="back">I want to try the relationship again</button>
+              <button class="option-btn" data-val="hi">Just to say hi / check in</button>
+              <button class="option-btn" data-val="hookup">To hook up</button>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="question-block hidden" data-q="5">
+            <h3 class="question-title">5. How will you feel if they don't reply?</h3>
+            <div class="grid-cols-1">
+              <button class="option-btn" data-val="fine">Fine, I'm just putting it out there.</button>
+              <button class="option-btn" data-val="anxious">Anxious and checking my phone</button>
+              <button class="option-btn" data-val="devastated">Devastated / I will spiral</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RESULT AREA (Hidden Initial State via Critical CSS) -->
+        <div id="resultArea" class="hidden mt-8 border-t border-slate-700 pt-8 text-center">
+          <div class="text-sm text-slate-400 uppercase tracking-widest font-bold mb-2">Readiness Score</div>
+          <div class="text-6xl font-black text-pink-400 mb-4" id="scoreDisplay">0</div>
+          
+          <div class="bg-slate-900/80 p-6 rounded-xl border border-purple-500/30">
+            <h3 class="text-2xl font-bold mb-3" id="verdictTitle">Verdict</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6" id="verdictDesc">Description</p>
+            
+            <button onclick="resetQuiz()" class="w-full bg-slate-700 hover:bg-slate-600 py-3 rounded-lg text-sm font-bold transition mb-3">Analyze Another Scenario</button>
+            <a href="/en/" class="block w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-3 rounded-lg shadow-lg transition" style="text-decoration: none;">
+              Take the Main Ex-Back Calculator →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- EDITORIAL WRAPPER (ADSENSE COMPLIANCE) -->
+    <article class="editorial-wrapper">
+      <h2>The Psychology of Post-Breakup Communication</h2>
+      <p>Reaching out to an ex is rarely just about the words you type. It is driven by a neurochemical urge for validation. When you text your ex, you are essentially asking them to soothe an anxiety that you should be soothing yourself. The "Should I Text My Ex" analyzer evaluates your timing, emotional state, and motivations to prevent you from making a text you will regret tomorrow.</p>
+
+      <h3>The 24-Hour Rule</h3>
+      <p>Before you send any text to an ex, you must apply the 24-hour rule. If you type out a message at 11 PM and still want to send it the next morning at 11 AM, it might be worth sending. If you wake up feeling relieved that you didn't send it, you successfully dodged a bullet.</p>
+
+      <h3>Frequently Asked Questions</h3>
+      <div class="space-y-3 mt-4">
+        <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+          <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+            <span>Is it ever a good idea to text an ex first?</span>
+            <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Only if the breakup was mutual, time has passed (at least 30 days), you are completely sober, and you have zero expectations about how they will reply.</p>
+        </details>
+        <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+          <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+            <span>Why do I feel a physical urge to text them?</span>
+            <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Your brain is going through dopamine withdrawal. You are literally addicted to the reward loop of interacting with them, and your brain is convincing you that a text will make the pain stop. It won't.</p>
+        </details>
+      </div>
+    </article>
+  </main>
+
+  <footer class="w-full max-w-3xl text-xs text-slate-500 text-center mt-12 pb-4">
+    Built with 💜 for anyone going through a breakup. | 
+    <a href="/en/privacy.html" class="hover:text-pink-400 transition">Privacy</a> • 
+    <a href="/en/terms.html" class="hover:text-pink-400 transition">Terms</a> • 
+    <a href="/en/about.html" class="hover:text-pink-400 transition">About</a> • 
+    <a href="/en/contact.html" class="hover:text-pink-400 transition">Contact</a> | 
+    © 2026 ExBackChance
+  </footer>
+
+  <script>
+    // Web Audio API SFX
+    let audioCtx = null;
+    function playPop() {
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.type = 'sine'; o.frequency.setValueAtTime(900, audioCtx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(400, audioCtx.currentTime + 0.1);
+        g.gain.setValueAtTime(0.3, audioCtx.currentTime); g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
+        o.connect(g); g.connect(audioCtx.destination); o.start(); o.stop(audioCtx.currentTime + 0.15);
+      } catch(e) {}
+    }
+
+    let currentQ = 1;
+    let answers = {};
+
+    document.querySelectorAll('.option-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        playPop();
+        // Find the parent question block
+        const qBlock = this.closest('.question-block');
+        const qNum = parseInt(qBlock.dataset.q);
+        
+        // Remove selected class from siblings
+        qBlock.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+
+        // Record answer
+        answers[qNum] = this.dataset.val;
+
+        // Hide current Q, show next
+        setTimeout(() => {
+          qBlock.classList.add('hidden');
+          const nextQ = document.querySelector(`.question-block[data-q="${qNum + 1}"]`);
+          if (nextQ) {
+            nextQ.classList.remove('hidden');
+            currentQ++;
+          } else {
+            showResults();
+          }
+        }, 300);
+      });
+    });
+
+    function showResults() {
+      let score = 50; // Base score
+
+      // Q1: Time
+      if (answers[1] === 'today') score -= 20;
+      else if (answers[1] === 'week') score -= 10;
+      else if (answers[1] === 'month') score += 10;
+      else if (answers[1] === 'long') score += 20;
+
+      // Q2: Who ended it
+      if (answers[2] === 'them') score -= 15;
+      else if (answers[2] === 'me') score += 10;
+      else if (answers[2] === 'mutual') score += 5;
+
+      // Q3: Sober
+      if (answers[3] === 'drinking') score -= 40;
+
+      // Q4: Goal
+      if (answers[4] === 'closure') score -= 10;
+      else if (answers[4] === 'back') score += 5;
+      else if (answers[4] === 'hookup') score -= 15;
+
+      // Q5: Reaction
+      if (answers[5] === 'fine') score += 15;
+      else if (answers[5] === 'anxious') score -= 10;
+      else if (answers[5] === 'devastated') score -= 30;
+
+      // Clamp
+      if (score < 0) score = 0;
+      if (score > 100) score = 100;
+
+      const scoreDisplay = document.getElementById('scoreDisplay');
+      const verdictTitle = document.getElementById('verdictTitle');
+      const verdictDesc = document.getElementById('verdictDesc');
+
+      // Animate score
+      let count = 0;
+      const interval = setInterval(() => {
+        scoreDisplay.textContent = count;
+        if (count >= score) clearInterval(interval);
+        count += 2;
+      }, 20);
+
+      if (score <= 40) {
+        verdictTitle.textContent = "🚫 DO NOT SEND IT.";
+        verdictTitle.style.color = "#ef4444"; // Red
+        verdictDesc.textContent = "You are operating from a place of anxiety, not logic. Texting right now will likely make you look desperate and push them further away. Put the phone down. Go to sleep. Implement a 30-day no-contact rule immediately.";
+      } else if (score <= 75) {
+        verdictTitle.textContent = "⏳ WAIT 24 HOURS.";
+        verdictTitle.style.color = "#facc15"; // Yellow
+        verdictDesc.textContent = "There is a high risk you will regret this. Write the text in your notes app, but do not send it. Wait exactly 24 hours. If you still feel the same way tomorrow, keep it short, light, and completely unemotional.";
+      } else {
+        verdictTitle.textContent = "✅ PROCEED WITH CAUTION.";
+        verdictTitle.style.color = "#4ade80"; // Green
+        verdictDesc.textContent = "Your emotional state is stable and you have realistic expectations. You can send a text, but keep it brief. Do not bring up the relationship. Just test the waters. If they reply coldly, back off immediately.";
+      }
+
+      document.getElementById('quiz-container').classList.add('hidden');
+      document.getElementById('resultArea').classList.remove('hidden');
+    }
+
+    function resetQuiz() {
+      playPop();
+      answers = {};
+      document.getElementById('resultArea').classList.add('hidden');
+      document.getElementById('quiz-container').classList.remove('hidden');
+      
+      // Reset all question blocks
+      document.querySelectorAll('.question-block').forEach((block, index) => {
+        if (index === 0) block.classList.remove('hidden');
+        else block.classList.add('hidden');
+        block.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+      });
+      currentQ = 1;
+    }
+  </script>
+</body>
+</html>
