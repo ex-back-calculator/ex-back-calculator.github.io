@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breakup Recovery Timeline Calculator (2026)</title>
+<meta name="description" content="Find out how long it will take to get over your ex. Our free psychological calculator estimates your recovery timeline based on relationship length and breakup dynamics.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Breakup Recovery Timeline Calculator" />
+<meta property="og:description" content="Estimate your psychological recovery timeline based on your specific breakup." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ex-back-calculator.github.io/en/tools/recovery-timeline.html" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://ex-back-calculator.github.io/en/tools/recovery-timeline.html" />
+
+<!-- Schema.org WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Breakup Recovery Timeline Calculator",
+  "url": "https://ex-back-calculator.github.io/en/tools/recovery-timeline.html",
+  "description": "A psychological tool to estimate how long it takes to recover from a breakup.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- CRITICAL INLINE CSS (Prevents FOUC) -->
+<style>
+  body { background-color: #020617; color: #cbd5e1; margin: 0; font-family: 'Poppins', system-ui, -apple-system, sans-serif; line-height: 1.5; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; color: #ffffff; margin-top: 0; }
+  
+  nav { width: 100%; max-width: 48rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(2, 6, 23, 0.8); border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 50; }
+  main { max-width: 48rem; margin: 0 auto; padding: 2rem 1rem; }
+  .hidden { display: none !important; }
+  
+  .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(236, 72, 153, 0.2); box-shadow: 0 0 30px rgba(236, 72, 153, 0.15); border-radius: 1rem; padding: 1.5rem; }
+  
+  .form-group { margin-bottom: 1.25rem; }
+  .form-group label { display: block; font-size: 0.875rem; font-weight: 600; color: #94a3b8; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .form-select { width: 100%; background-color: #0f172a; border: 1px solid #334155; color: #ffffff; padding: 0.75rem 1rem; border-radius: 0.5rem; font-size: 1rem; outline: none; transition: border-color 0.2s; appearance: none; }
+  .form-select:focus { border-color: #ec4899; }
+  
+  .btn-primary { width: 100%; background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%); color: white; font-weight: 700; padding: 1rem; border-radius: 0.75rem; border: none; cursor: pointer; font-size: 1.125rem; box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4); transition: all 0.2s; }
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-primary:active { transform: scale(0.98); }
+  
+  .nav-link { color: #94a3b8; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: color 0.2s; }
+  .nav-link:hover { color: #f472b6; }
+  .nav-link.active { color: #f472b6; text-decoration: underline; text-underline-offset: 4px; }
+  
+  .editorial-wrapper { margin-top: 2rem; background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 1rem; padding: 2rem; color: #cbd5e1; font-size: 0.95rem; }
+  .editorial-wrapper h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .editorial-wrapper h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #f472b6; }
+  .editorial-wrapper p { margin-bottom: 1rem; line-height: 1.7; }
+</style>
+
+<script src="https://cdn.tailwindcss.com" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- STICKY NAV -->
+  <nav>
+    <a href="/en/" class="text-xl font-bold text-white hover:text-pink-400 transition flex items-center gap-2" style="text-decoration: none;">
+      <span>💔</span> ExBackChance
+    </a>
+    <div class="flex gap-4 text-sm font-semibold overflow-x-auto" style="display: flex; gap: 1rem;">
+      <a href="/en/" class="nav-link">Calculator</a>
+      <a href="/en/tools/no-contact-tracker.html" class="nav-link">Tracker</a>
+      <a href="/en/tools/should-i-text-my-ex.html" class="nav-link">Analyzer</a>
+      <a href="/en/tools/recovery-timeline.html" class="nav-link active">Timeline</a>
+    </div>
+  </nav>
+
+  <main>
+    
+    <!-- TOOL INTERFACE -->
+    <div class="glass-panel relative overflow-hidden">
+      <div class="relative z-10">
+        <h1 class="text-3xl font-bold text-center mb-2">Breakup Recovery Timeline</h1>
+        <p class="text-sm text-slate-400 mb-8 text-center">Estimate how long it will take to psychologically recover from your breakup.</p>
+
+        <div id="calculator-form">
+          <div class="form-group">
+            <label>How long were you together?</label>
+            <select id="relLength" class="form-select">
+              <option value="" disabled selected>Select relationship length</option>
+              <option value="short">Less than 6 months</option>
+              <option value="medium">6 months – 2 years</option>
+              <option value="long">2 – 5 years</option>
+              <option value="verylong">Over 5 years</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Who ended the relationship?</label>
+            <select id="whoEnded" class="form-select">
+              <option value="" disabled selected>Select who ended it</option>
+              <option value="them">They broke up with me</option>
+              <option value="me">I broke up with them</option>
+              <option value="mutual">It was mutual</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Are you currently in contact?</label>
+            <select id="contact" class="form-select">
+              <option value="" disabled selected>Select contact level</option>
+              <option value="yes">Yes, we still talk regularly</option>
+              <option value="no">No, we are in No Contact</option>
+            </select>
+          </div>
+
+          <button id="calcBtn" class="btn-primary mt-4">Calculate My Timeline</button>
+        </div>
+
+        <!-- RESULT AREA (Hidden by default) -->
+        <div id="resultArea" class="hidden mt-8 border-t border-slate-700 pt-8 text-center">
+          <div class="text-sm text-slate-400 uppercase tracking-widest font-bold mb-2">Estimated Recovery Time</div>
+          <div class="text-4xl md:text-5xl font-black text-pink-400 mb-6" id="timeEstimate">0 Months</div>
+          
+          <div class="bg-slate-900/80 p-6 rounded-xl border border-purple-500/30 text-left">
+            <h3 class="text-xl font-bold mb-4 text-center">Your Recovery Milestones</h3>
+            <ul class="space-y-4 text-sm text-slate-300">
+              <li class="flex gap-3"><span>🌱</span> <div><strong>Phase 1 (Weeks 1-3):</strong> Acute withdrawal. Focus purely on survival. Do not make any major life decisions.</div></li>
+              <li class="flex gap-3"><span>🌿</span> <div><strong>Phase 2 (Weeks 4-8):</strong> The fog begins to lift. You will start to regain logical clarity. This is when the urge to text them peaks.</div></li>
+              <li class="flex gap-3"><span>🌳</span> <div><strong>Phase 3 (Months 2-4):</strong> Emotional stabilization. You begin to accept the new reality and start re-engaging with your own life.</div></li>
+              <li class="flex gap-3"><span>☀️</span> <div><strong>Phase 4 (Month 5+):</strong> Full psychological recovery. You can think about them without the intense emotional pain.</div></li>
+            </ul>
+            
+            <div class="mt-6 pt-6 border-t border-slate-700 text-center">
+              <button onclick="resetCalc()" class="text-xs font-bold text-slate-400 hover:text-white transition uppercase tracking-wider mb-3">Recalculate</button>
+              <br>
+              <a href="/en/" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition" style="text-decoration: none;">
+                Check Your Ex-Back Chances →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- EDITORIAL WRAPPER (ADSENSE COMPLIANCE) -->
+    <article class="editorial-wrapper">
+      <h2>The Science of Healing: How Long Does a Breakup Really Take?</h2>
+      <p>There is a popular myth that it takes exactly half the length of the relationship to get over someone. If you dated for two years, it will take one year to heal. While this is a nice rule of thumb, the actual psychology of recovery is much more complex. It depends on attachment styles, who initiated the breakup, and whether you are still in contact.</p>
+
+      <h3>The 11-Week Rule</h3>
+      <p>Recent psychological studies suggest that the most intense phase of emotional recovery takes roughly 11 weeks. During this time, your brain is literally rewiring its dopamine pathways. If you were with your partner for a long time, your brain became addicted to their presence. The recovery timeline is essentially the time it takes for your brain to return to baseline.</p>
+
+      <h3>Frequently Asked Questions</h3>
+      <div class="space-y-3 mt-4">
+        <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+          <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+            <span>Does staying in contact delay recovery?</span>
+            <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Yes, absolutely. Every time you talk to them, you reset the clock. You are re-triggering the dopamine loop that your brain is desperately trying to break. It is like an alcoholic trying to have "just one drink."</p>
+        </details>
+        <details class="group bg-slate-900/50 rounded-lg p-3 border border-slate-700/50">
+          <summary class="cursor-pointer font-bold text-sm text-pink-300 list-none flex justify-between items-center">
+            <span>Who takes longer to recover: the dumper or the dumpee?</span>
+            <span class="text-pink-400 group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">Interestingly, research shows the "dumper" often takes longer to fully heal in the long run. The "dumpee" goes through intense acute pain immediately, but then they heal. The dumper often suppresses their emotions initially, only to have them hit months later when the dumpee has already moved on.</p>
+        </details>
+      </div>
+    </article>
+  </main>
+
+  <footer class="w-full max-w-3xl text-xs text-slate-500 text-center mt-12 pb-4">
+    Built with 💜 for anyone going through a breakup. | 
+    <a href="/en/privacy.html" class="hover:text-pink-400 transition">Privacy</a> • 
+    <a href="/en/terms.html" class="hover:text-pink-400 transition">Terms</a> • 
+    <a href="/en/about.html" class="hover:text-pink-400 transition">About</a> • 
+    <a href="/en/contact.html" class="hover:text-pink-400 transition">Contact</a> | 
+    © 2026 ExBackChance
+  </footer>
+
+  <script>
+    // Web Audio API SFX
+    let audioCtx = null;
+    function playPop() {
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.type = 'sine'; o.frequency.setValueAtTime(900, audioCtx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(400, audioCtx.currentTime + 0.1);
+        g.gain.setValueAtTime(0.3, audioCtx.currentTime); g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
+        o.connect(g); g.connect(audioCtx.destination); o.start(); o.stop(audioCtx.currentTime + 0.15);
+      } catch(e) {}
+    }
+
+    document.getElementById('calcBtn').addEventListener('click', function() {
+      playPop();
+      
+      const relLength = document.getElementById('relLength').value;
+      const whoEnded = document.getElementById('whoEnded').value;
+      const contact = document.getElementById('contact').value;
+
+      if(!relLength || !whoEnded || !contact) {
+        alert("Please answer all questions to calculate your timeline.");
+        return;
+      }
+
+      // Base recovery in months
+      let baseMonths = 3;
+
+      // Relationship length multiplier
+      if (relLength === 'medium') baseMonths += 2;
+      else if (relLength === 'long') baseMonths += 5;
+      else if (relLength === 'verylong') baseMonths += 9;
+
+      // Who ended it multiplier
+      if (whoEnded === 'them') baseMonths += 2; // Dumpees usually take slightly longer initially
+      else if (whoEnded === 'me') baseMonths += 1; // Guilt takes a toll
+      else if (whoEnded === 'mutual') baseMonths -= 1;
+
+      // Contact multiplier
+      if (contact === 'yes') baseMonths = Math.round(baseMonths * 1.5); // Contact resets the clock
+
+      // Clamp minimum
+      if (baseMonths < 2) baseMonths = 2;
+
+      document.getElementById('timeEstimate').textContent = baseMonths + " Months";
+      
+      document.getElementById('calculator-form').classList.add('hidden');
+      document.getElementById('resultArea').classList.remove('hidden');
+    });
+
+    function resetCalc() {
+      playPop();
+      document.getElementById('calculator-form').classList.remove('hidden');
+      document.getElementById('resultArea').classList.add('hidden');
+      document.getElementById('relLength').value = "";
+      document.getElementById('whoEnded').value = "";
+      document.getElementById('contact').value = "";
+    }
+  </script>
+</body>
+</html>
