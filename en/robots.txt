@@ -1,4 +1,10 @@
+# Allow all reputable search engines to crawl the site
 User-agent: *
 Allow: /
 
+# Explicitly allow Google AdSense crawler (Mediapartners-Google)
+User-agent: Mediapartners-Google
+Allow: /
+
+# Sitemap location
 Sitemap: https://ex-back-calculator.github.io/en/sitemap.xml
