@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="ne">
-<head><meta name="google-site-verification" content="aC5AuoYODb-YFxhXCVlflZJU_cxyXe4VEcPL3xc6ilM" />
+<head>
+<meta name="google-site-verification" content="aC5AuoYODb-YFxhXCVlflZJU_cxyXe4VEcPL3xc6ilM" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ex Back Calculator - २०८३ को सबैभन्दा भाइरल लभ क्याल्कुलेटर 🇳🇵</title>
 <meta name="description" content="💔 तपाईंको एक्स फर्किने चान्स कति छ? नाम र मुड हाल्नुस्, पोल खुल्छ! 😂">
 
+<!-- Open Graph (Links Updated to GitHub) -->
 <meta property="og:title" content="💔 Ex Back Calculator - २०८३ को सबैभन्दा भाइरल लभ क्याल्कुलेटर" />
 <meta property="og:description" content="अहिले नै चेक गर्नुहोस् र आफ्नो भविष्यको लभ लाइफ थाहा पाउनुहोस्! 🇳🇵" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ex-back-calculator.vercel.app" />
-<meta property="og:image" content="https://ex-back-calculator.vercel.app/api/og" />
+<meta property="og:url" content="https://ex-back-calculator.github.io/" />
+<meta property="og:image" content="https://ex-back-calculator.github.io/thumbnail.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="monetag" content="917177da0122c1457e361ec65a4350d6">
-<script src="https://quge5.com/88/tag.min.js" data-zone="291437" async data-cfasync="false"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<meta name="twitter:title" content="💔 Ex Back Calculator - २०८३ को सबैभन्दा भाइरल लभ क्याल्कुलेटर" />
+<meta name="twitter:description" content="अहिले नै चेक गर्नुहोस् र आफ्नो भविष्यको लभ लाइफ थाहा पाउनुहोस्! 🇳🇵" />
+<meta name="twitter:image" content="https://ex-back-calculator.github.io/thumbnail.png" />
+
+<!-- CRITICAL INLINE CSS (Prevents FOUC / White Flash) -->
+<style>
+  body { background-color: #0f172a; color: #ffffff; margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+</style>
+
+<script src="https://cdn.tailwindcss.com" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
 </head>
 
 <body class="bg-slate-900 text-white min-h-screen flex flex-col items-center justify-between p-4">
@@ -78,8 +87,9 @@
         <p class="text-xs bg-slate-900/80 p-3 rounded-lg text-slate-300 leading-relaxed" id="prediction-text"></p>
         <p class="text-[11px] text-slate-400 leading-relaxed" id="extra-text"></p>
 
+        <!-- Link text updated to GitHub -->
         <div class="text-[10px] text-slate-500 pt-2 border-t border-slate-800">
-          🇳🇵 २०८३ • Check yours at: ex-back-calculator.vercel.app
+          🇳🇵 २०८३ • Check yours at: ex-back-calculator.github.io
         </div>
       </div>
 
@@ -123,8 +133,8 @@
 (function () {
   'use strict';
 
+  // Updated to GitHub URL
   const SITE_URL    = 'https://ex-back-calculator.github.io/';
-  const MONETAG_URL = 'https://uplcm.com/4/11969106';
   const FB_APP_ID   = '291494419107518';
 
   const ROASTS = {
@@ -322,16 +332,10 @@
     els.resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
-  // ============ DOWNLOAD WITH AD ============
+  // ============ DOWNLOAD (No Ads) ============
   function downloadResultCard() {
     if (isRendering) return;
 
-    // १) पहिले विज्ञापन खोल्ने (user click भित्रै — popup blocker allow गर्छ)
-    if (MONETAG_URL && MONETAG_URL.indexOf('http') === 0) {
-      safeOpen(MONETAG_URL);
-    }
-
-    // २) अनि कार्ड डाउनलोड गर्ने
     isRendering = true;
     const originalLabel = els.downloadBtn.textContent;
     els.downloadBtn.disabled = true;
