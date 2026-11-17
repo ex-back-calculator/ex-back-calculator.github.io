@@ -189,6 +189,7 @@
 }
 </script>
 
+<!-- No Monetag or Ad Scripts here (Clean for AdSense) -->
 <script src="https://cdn.tailwindcss.com" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
 
@@ -744,6 +745,7 @@
 (function () {
   'use strict';
 
+  // Cleaned URL - No Cloudflare Pages, only GitHub
   const SITE_URL    = 'https://ex-back-calculator.github.io/en/';
 
   let audioCtx = null;
@@ -1084,6 +1086,7 @@
 
   function downloadResultCard() {
     resumeCtx();
+    // Removed MONETAG popup - Now 100% ad-free download
     const btn = document.getElementById('downloadBtn');
     const orig = btn.textContent;
     btn.disabled = true; btn.textContent = '⏳ Creating...';
